@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Yanone+Kaffeesatz&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  color: #161616; }
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 11.06vw 6.61vw 0 6.6vw; }
+  .heading__right {
+    display: flex;
+    align-items: center; }
+    .heading__right img {
+      height: 14.61vw;
+      position: relative;
+      top: 10.7660764212%; }
+  .heading__section {
+    font-family: "Lato", sans-serif;
+    font-size: 1.39vw;
+    line-height: 3.89vw;
+    letter-spacing: .05vw;
+    margin-left: 1.74vw; }
+  .heading__title {
+    display: flex;
+    position: relative;
+    height: max-content;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 5.21vw;
+    margin-left: 1.74vw;
+    margin-top: .97vw;
+    line-height: 4.17vw;
+    z-index: 9; }
+    .heading__title--bold {
+      padding-left: .14vw;
+      font-size: 5vw;
+      letter-spacing: -.5px;
+      font-weight: 600; }
+  .heading__shadow {
+    position: absolute;
+    height: 2.92vw;
+    width: 27.15vw;
+    background-color: #E7E7E7;
+    top: 18.19vw; }
+  @media only screen and (max-width: 414px) {
+    .heading {
+      justify-content: center;
+      padding: 19.4vw 0 0;
+      margin: 0 19.73vw; }
+      .heading__right {
+        display: none; }
+      .heading__section {
+        font-size: 4.27vw;
+        line-height: 14.93vw;
+        letter-spacing: .53vw;
+        margin-left: 0;
+        text-align: center; }
+      .heading__title {
+        font-size: 10.67vw;
+        line-height: 11vw;
+        margin: 0; }
+        .heading__title--bold {
+          font-size: 10.667vw; }
+      .heading__shadow {
+        height: 6.67vw;
+        width: 60.8vw;
+        background-color: #E7E7E7;
+        top: 39.73vw;
+        right: 19.73vw; } }
+
+.slider {
+  margin-top: -.44vw;
+  z-index: 99; }
+  .slider__content {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 7.44vw; }
+  .slider__item {
+    display: flex;
+    flex-direction: column;
+    width: 18.54vw;
+    margin: 0 1.65vw; }
+    .slider__item--lessLeftMargin {
+      margin: 0 1.65vw 0 .89vw; }
+  .slider__imageHolder--deviatied1px {
+    padding-left: 1px; }
+  .slider__imageHolder--deviatied2px {
+    padding-left: 2px; }
+  .slider__img {
+    height: 20.9vw; }
+  .slider__text {
+    margin-top: 1.9vw; }
+  .slider__name {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 1.81vw;
+    line-height: 2.71vw;
+    letter-spacing: 1px; }
+  .slider__position {
+    font-family: "Lato", sans-serif;
+    font-size: 1.25vw;
+    line-height: 1.1vw;
+    font-weight: 300;
+    letter-spacing: -.03px; }
+  .slider__indicators {
+    margin-top: 4.79vw;
+    margin-bottom: 6.88vw;
+    display: flex;
+    justify-content: center; }
+  .slider__button {
+    background-color: #EC4133;
+    opacity: 0.3;
+    height: .9vw;
+    width: .9vw;
+    border: none;
+    border-radius: 100%;
+    margin: 0 .31vw; }
+    .slider__button--active {
+      width: 1.81vw;
+      border-radius: 6px;
+      opacity: 1; }
+  @media only screen and (max-width: 414px) {
+    .slider {
+      margin-top: -.44vw;
+      margin-bottom: .1vw; }
+      .slider__content {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 8.15vw 7.44vw 0; }
+      .slider__item {
+        flex-direction: column;
+        margin: 0; }
+      .slider__imageHolder--deviatied1px {
+        padding-left: 1px; }
+      .slider__imageHolder--deviatied2px {
+        padding-left: 2px; }
+      .slider__img {
+        height: 102.62vw;
+        width: 91.47vw; }
+      .slider__text {
+        margin-top: 1.78vw;
+        text-align: center; }
+      .slider__name, .slider__position {
+        position: relative; }
+      .slider__name {
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        font-size: 8vw;
+        line-height: 13.33vw;
+        letter-spacing: 1px;
+        top: -8.7vw;
+        left: -2vw; }
+      .slider__position {
+        font-family: "Lato", sans-serif;
+        font-size: 4.8vw;
+        line-height: 5.76vw;
+        font-weight: 300;
+        letter-spacing: -.02px;
+        top: -9.7vw;
+        left: -2vw; }
+      .slider__indicators {
+        display: none; }
+      .slider .slick-prev.slick-arrow,
+      .slider .slick-next.slick-arrow {
+        height: 8.53vw;
+        width: 8.53vw;
+        position: absolute;
+        border: 1px solid #A8A8A8;
+        border-radius: 100%; }
+        .slider .slick-prev.slick-arrow img,
+        .slider .slick-next.slick-arrow img {
+          margin: auto; }
+      .slider .slick-prev.slick-arrow {
+        top: 43.2vw;
+        left: -3.35vw;
+        z-index: 9; }
+      .slider .slick-next.slick-arrow {
+        top: 43.2vw;
+        right: -3.35vw; }
+      .slider .slick-slide {
+        display: flex;
+        align-items: center; } }
+
+.bottom {
+  background-color: #EC4133;
+  color: #FFFFFF; }
+  .bottom__vector {
+    overflow: hidden;
+    position: relative;
+    top: -.07vw;
+    z-index: 9; }
+    .bottom__vector img {
+      width: 100%; }
+  .bottom__container {
+    display: flex;
+    flex-direction: column;
+    height: 36.46vw; }
+  .bottom__image {
+    height: 10.97vw;
+    margin-bottom: .56vw;
+    margin-top: 7.08vw; }
+  .bottom__title {
+    display: inline;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 4.51vw;
+    line-height: 3.89vw;
+    margin: 2.03vw auto 1.32vw; }
+    .bottom__title--bold {
+      margin: 0;
+      font-size: 4.44vw;
+      font-weight: 700; }
+  .bottom__subtitle {
+    font-family: Lato;
+    font-size: 1.39vw;
+    line-height: 2.08vw;
+    font-weight: 400;
+    letter-spacing: 0.07px;
+    text-align: center;
+    margin-left: .07vw; }
+  @media only screen and (max-width: 414px) {
+    .bottom__vector img {
+      position: relative;
+      width: 386.4vw;
+      left: -200vw; }
+    .bottom__container {
+      height: 189.6vw; }
+    .bottom__image {
+      height: 42.13vw;
+      margin-top: 8vw;
+      margin-bottom: 5.87vw; }
+    .bottom__title {
+      font-size: 10.67vw;
+      line-height: 12.53vw;
+      text-align: center;
+      margin: 1.8vw 23vw 1.32vw; }
+      .bottom__title--bold {
+        margin: 0;
+        letter-spacing: -.5px; }
+    .bottom__subtitle {
+      display: inline;
+      font-size: 5.33vw;
+      margin: 3.2vw 11vw;
+      line-height: 8vw;
+      padding-left: 1.7vw;
+      letter-spacing: .1px; } }
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    min-height: 100vh;
+    justify-content: space-between; } }
